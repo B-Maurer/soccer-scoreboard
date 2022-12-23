@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soccer Scoreboard</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>St. Louis CITY SC</h1>
+      <div class="flex-container timer">
+        <div class="digit-box">
+          <div class="digit">00</div>
+        </div>
+        <div class="colon">:</div>
+        <div class="digit-box">
+          <div class="digit">00</div>
+        </div>
+      </div>
+
+      <div class="flex-container score">
+        <!-- Home -->
+        <div class="team">
+          <h3>HOME</h3>
+          <div class="digit-box">
+            <div class="digit" id="home-goal">0</div>
+          </div>
+          <button class="btn" onclick="homePoint()">GOAL</button>
+        </div>
+        <!-- Period  -->
+        <div class="period">
+          <h3 class="period-title">PERIOD</h3>
+          <div class="digit-box period-digit-box">
+            <div class="digit period-digit" id="period-digit">1</div>
+          </div>
+          <button class="btn period-btn" onclick="addPeriod()">+1</button>
+        </div>
+        <!-- Guest -->
+        <div class="team">
+          <h3>GUEST</h3>
+          <div class="digit-box">
+            <div class="digit" id="guest-goal">0</div>
+          </div>
+          <button class="btn" onclick="guestPoint()">GOAL</button>
+        </div>
+      </div>
+      <button class="btn new-game-btn" onclick="newGame()">New Game</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+/* STL Soccer Color Palette  */
+:root {
+  --oxford-blue: #001134;
+  --white: #f5f5f5;
+  --ua-red: #de0049;
+}
+
+@font-face {
+  font-family: 'Cursed Timer';
+  src: url(CursedTimerUlil-Aznm.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--white);
+  font-family: Verdana, sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.75rem;
+  margin-bottom: 16px;
+}
+
+.container {
+  background-color: var(--oxford-blue);
+  border: 6px solid var(--ua-red);
+  border-radius: 15px;
+  width: 80%;
+  max-width: 700px;
+  min-width: 400px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.timer {
+  justify-content: center;
+  align-items: center;
+}
+
+.digit-box {
+  background-color: black;
+  border: 0.5px solid var(--white);
+  border-radius: 5px;
+  width: 100px;
+  height: auto;
+}
+
+.digit {
+  font-family: 'Cursed Timer';
+  font-size: 3rem;
+  color: var(--ua-red);
+  margin-top: 12px;
+  padding: 12px;
+}
+
+.colon {
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 0 12px;
+}
+
+.score {
+  justify-content: space-evenly;
+}
+
+.period-title {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.period-digit-box {
+  width: 75px;
+  height: auto;
+}
+
+.period-digit {
+  font-size: 2rem;
+  padding: 6px;
+  margin-top: 6px;
+}
+
+.btn {
+  background-color: var(--ua-red);
+  border: 1px solid var(--white);
+  border-radius: 5px;
+  font-size: 1.15rem;
+  font-weight: 900;
+  color: var(--white);
+  margin: 16px 0;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.new-game-btn {
+  font-size: 1.5rem;
+  margin-bottom: 26.8px;
+}
